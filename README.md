@@ -291,32 +291,20 @@ Json файл должен содержать информацию об одно
 |type|Тип регистрации|enum('const','tmp')|Да|Возможные значения:<ul><li><b>const</b> - по месту жительства (постоянная)</li><li><b>tmp</b> - по месту пребывания (временная)</li></ul><br>||
 |date_from|Дата начала регистрации|[Дата](#type-date)|Да|См. тип [Дата](#type-date)|
 |date_to|Дата окончания регистрации|[Дата](#type-date)|Нет|См. тип [Дата](#type-date)|
-|from|Регистрация|object|Нет|Объект с [листком прибытия](#from)|
-|to|Регистрация|object|Нет|Объект с [листком убытия](#to)|
+|from|Регистрация|object|Нет|Объект с [листком прибытия](#arrival-departure-form)|
+|to|Регистрация|object|Нет|Объект с [листком убытия](#arrival-departure-form)|
 
-###### <a id="from"></a>Описание объекта `from`
+###### <a id="arrival-departure-form"></a>Описание объекта листка прибытия/убытия `arrival-departure-form`
 |Поле|Название поля|Тип|Обязательное|Описание|
 |---|---|---|---|---|
 |country|Страна|string|Нет||
-|region|Страна|string|Нет||
-|district|Страна|string|Нет||
-|city|Страна|string|Нет||
-|locality|Страна|string|Нет||
-|street|Страна|string|Нет||
-|house|Страна|string|Нет||
-|flat|Страна|string|Нет||
-
-###### <a id="to"></a>Описание объекта `to`
-|Поле|Название поля|Тип|Обязательное|Описание|
-|---|---|---|---|---|
-|country|Страна|string|Нет||
-|region|Страна|string|Нет||
-|district|Страна|string|Нет||
-|city|Страна|string|Нет||
-|locality|Страна|string|Нет||
-|street|Страна|string|Нет||
-|house|Страна|string|Нет||
-|flat|Страна|string|Нет||
+|region|Регион|string|Нет||
+|district|Район|string|Нет||
+|city|Город|string|Нет||
+|locality|Населенный пункт|string|Нет||
+|street|Улица|string|Нет||
+|house|Номер дома|string|Нет||
+|flat|Номер квартиры|string|Нет||
 
 ###### <a id="individual-object"></a>Описание объекта `individual`
 
